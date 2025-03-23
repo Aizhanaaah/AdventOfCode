@@ -40,7 +40,15 @@ print(totalSum)
 '''
 
 #3rd solution that works:
+
 data = [*map(int, open('input1.txt').read().split())]
 A, B = sorted(data[0::2]), sorted(data[1::2])
 print(sum(map(lambda a, b: abs(a-b), A, B)))
 
+#partB:
+frequency_counter = Counter(A)
+list = []
+for j in B:
+    if j in frequency_counter:
+        list.append(j * frequency_counter[j])
+print(sum(list))
