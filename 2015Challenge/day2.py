@@ -1,3 +1,5 @@
+# Part A:
+
 with open("giftsdim.txt") as f:
     line1 = []
     for line in f:
