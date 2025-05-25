@@ -1,3 +1,6 @@
+#Part A:
+
+
 with open("locations.txt") as f:
     x = 0
     y = 0
